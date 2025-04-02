@@ -6,23 +6,49 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FB7883262D9CC49400370C4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7883202D9CC49400370C4D /* Preview Assets.xcassets */; };
+		FB7883272D9CC49400370C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7883222D9CC49400370C4D /* Assets.xcassets */; };
+		FB7883282D9CC49400370C4D /* BigBangTheoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7883232D9CC49400370C4D /* BigBangTheoryApp.swift */; };
+		FB7883292D9CC49400370C4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7883242D9CC49400370C4D /* ContentView.swift */; };
+		FB78832C2D9CC57200370C4D /* ComponentKit in Frameworks */ = {isa = PBXBuildFile; productRef = FB78832B2D9CC57200370C4D /* ComponentKit */; };
+		FB78832E2D9CC59F00370C4D /* BigBangTest.json in Resources */ = {isa = PBXBuildFile; fileRef = FB78832D2D9CC59F00370C4D /* BigBangTest.json */; };
+		FB7883312D9CC5B300370C4D /* BigBang.json in Resources */ = {isa = PBXBuildFile; fileRef = FB7883302D9CC5B300370C4D /* BigBang.json */; };
+		FB7883342D9CC5D100370C4D /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7883332D9CC5D100370C4D /* RepositoryTest.swift */; };
+		FB7883362D9CC5DA00370C4D /* BigBangTheoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7883352D9CC5DA00370C4D /* BigBangTheoryModel.swift */; };
+		FB7883392D9CC5E400370C4D /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7883372D9CC5E400370C4D /* Repository.swift */; };
+		FB78833E2D9CC63600370C4D /* BigBangTheoryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78833D2D9CC63600370C4D /* BigBangTheoryVM.swift */; };
+		FB7883412D9CC9A000370C4D /* EpisodeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7883402D9CC9A000370C4D /* EpisodeCard.swift */; };
+		FB7883432D9CCA8E00370C4D /* Muro.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB7883422D9CCA8E00370C4D /* Muro.otf */; };
+		FB7883472D9CCB4A00370C4D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7883462D9CCB4A00370C4D /* Fonts.swift */; };
+		FB7883492D9CD1E600370C4D /* SemiRoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7883482D9CD1E600370C4D /* SemiRoundedRectangle.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FB78830F2D9CC48300370C4D /* BigBangTheory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigBangTheory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7883202D9CC49400370C4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB7883222D9CC49400370C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB7883232D9CC49400370C4D /* BigBangTheoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangTheoryApp.swift; sourceTree = "<group>"; };
+		FB7883242D9CC49400370C4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB78832D2D9CC59F00370C4D /* BigBangTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BigBangTest.json; sourceTree = "<group>"; };
+		FB7883302D9CC5B300370C4D /* BigBang.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BigBang.json; sourceTree = "<group>"; };
+		FB7883332D9CC5D100370C4D /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
+		FB7883352D9CC5DA00370C4D /* BigBangTheoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangTheoryModel.swift; sourceTree = "<group>"; };
+		FB7883372D9CC5E400370C4D /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		FB78833D2D9CC63600370C4D /* BigBangTheoryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangTheoryVM.swift; sourceTree = "<group>"; };
+		FB7883402D9CC9A000370C4D /* EpisodeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCard.swift; sourceTree = "<group>"; };
+		FB7883422D9CCA8E00370C4D /* Muro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Muro.otf; sourceTree = "<group>"; };
+		FB7883462D9CCB4A00370C4D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FB7883482D9CD1E600370C4D /* SemiRoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiRoundedRectangle.swift; sourceTree = "<group>"; };
+		FBBB78F22D9CDFCF008EEEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		FB7883112D9CC48300370C4D /* BigBangTheory */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BigBangTheory;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FB78830C2D9CC48300370C4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB78832C2D9CC57200370C4D /* ComponentKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +58,7 @@
 		FB7883062D9CC48300370C4D = {
 			isa = PBXGroup;
 			children = (
-				FB7883112D9CC48300370C4D /* BigBangTheory */,
+				FB7883252D9CC49400370C4D /* BigBangTheory */,
 				FB7883102D9CC48300370C4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +69,84 @@
 				FB78830F2D9CC48300370C4D /* BigBangTheory.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FB7883212D9CC49400370C4D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB7883202D9CC49400370C4D /* Preview Assets.xcassets */,
+				FB78832D2D9CC59F00370C4D /* BigBangTest.json */,
+				FB7883332D9CC5D100370C4D /* RepositoryTest.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB7883252D9CC49400370C4D /* BigBangTheory */ = {
+			isa = PBXGroup;
+			children = (
+				FB7883242D9CC49400370C4D /* ContentView.swift */,
+				FB78833F2D9CC99300370C4D /* Components */,
+				FB7883382D9CC5E400370C4D /* Repository */,
+				FB78833A2D9CC61300370C4D /* ViewModel */,
+				FB7883322D9CC5BC00370C4D /* Model */,
+				FB78832F2D9CC5A400370C4D /* Resources */,
+				FB7883452D9CCB2C00370C4D /* Extension */,
+				FB7883222D9CC49400370C4D /* Assets.xcassets */,
+				FB7883232D9CC49400370C4D /* BigBangTheoryApp.swift */,
+				FBBB78F22D9CDFCF008EEEAF /* Info.plist */,
+				FB7883212D9CC49400370C4D /* Preview Content */,
+			);
+			path = BigBangTheory;
+			sourceTree = "<group>";
+		};
+		FB78832F2D9CC5A400370C4D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB7883302D9CC5B300370C4D /* BigBang.json */,
+				FB7883422D9CCA8E00370C4D /* Muro.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB7883322D9CC5BC00370C4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB7883352D9CC5DA00370C4D /* BigBangTheoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB7883382D9CC5E400370C4D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FB7883372D9CC5E400370C4D /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FB78833A2D9CC61300370C4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB78833D2D9CC63600370C4D /* BigBangTheoryVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FB78833F2D9CC99300370C4D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FB7883402D9CC9A000370C4D /* EpisodeCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FB7883452D9CCB2C00370C4D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FB7883462D9CCB4A00370C4D /* Fonts.swift */,
+				FB7883482D9CD1E600370C4D /* SemiRoundedRectangle.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,11 +164,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				FB7883112D9CC48300370C4D /* BigBangTheory */,
-			);
 			name = BigBangTheory;
 			packageProductDependencies = (
+				FB78832B2D9CC57200370C4D /* ComponentKit */,
 			);
 			productName = BigBangTheory;
 			productReference = FB78830F2D9CC48300370C4D /* BigBangTheory.app */;
@@ -94,6 +196,9 @@
 			);
 			mainGroup = FB7883062D9CC48300370C4D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FB78832A2D9CC57200370C4D /* XCRemoteSwiftPackageReference "ComponentKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FB7883102D9CC48300370C4D /* Products */;
 			projectDirPath = "";
@@ -109,6 +214,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7883262D9CC49400370C4D /* Preview Assets.xcassets in Resources */,
+				FB7883432D9CCA8E00370C4D /* Muro.otf in Resources */,
+				FB7883272D9CC49400370C4D /* Assets.xcassets in Resources */,
+				FB7883312D9CC5B300370C4D /* BigBang.json in Resources */,
+				FB78832E2D9CC59F00370C4D /* BigBangTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +229,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7883472D9CCB4A00370C4D /* Fonts.swift in Sources */,
+				FB7883282D9CC49400370C4D /* BigBangTheoryApp.swift in Sources */,
+				FB7883492D9CD1E600370C4D /* SemiRoundedRectangle.swift in Sources */,
+				FB7883362D9CC5DA00370C4D /* BigBangTheoryModel.swift in Sources */,
+				FB78833E2D9CC63600370C4D /* BigBangTheoryVM.swift in Sources */,
+				FB7883392D9CC5E400370C4D /* Repository.swift in Sources */,
+				FB7883292D9CC49400370C4D /* ContentView.swift in Sources */,
+				FB7883412D9CC9A000370C4D /* EpisodeCard.swift in Sources */,
+				FB7883342D9CC5D100370C4D /* RepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +374,7 @@
 				DEVELOPMENT_TEAM = 7GRZBU3W5C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BigBangTheory/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +404,7 @@
 				DEVELOPMENT_TEAM = 7GRZBU3W5C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BigBangTheory/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +445,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB78832A2D9CC57200370C4D /* XCRemoteSwiftPackageReference "ComponentKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:cxcarvaj/ComponentKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB78832B2D9CC57200370C4D /* ComponentKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB78832A2D9CC57200370C4D /* XCRemoteSwiftPackageReference "ComponentKit" */;
+			productName = ComponentKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB7883072D9CC48300370C4D /* Project object */;
 }

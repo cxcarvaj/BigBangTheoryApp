@@ -1,0 +1,15 @@
+{
+  "originHash" : "5122af4e7f6778c32067cc948f7fccfdca795e30f8e3e8b16a8406e51ac1ed68",
+  "pins" : [
+    {
+      "identity" : "componentkit",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:cxcarvaj/ComponentKit.git",
+      "state" : {
+        "revision" : "c1d08ac00b2823490182912bc58199a3f802f4b2",
+        "version" : "0.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}
