@@ -30,8 +30,9 @@ extension BigBangTheoryModel {
                                    url: URL(string: "https://www.tvmaze.com/episodes/3049/the-big-bang-theory-7x02-the-deception-verification")!)
 }
 
-extension View {
-    static func preview() -> some View {
-        ContentView(vm: BigBangTheoryVM(repository: RepositoryTest()))
+extension ContentView {
+    static var preview: some View {
+        ContentView()
+            .environment(BigBangTheoryVM(repository: RepositoryTest()))
     }
 }

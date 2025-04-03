@@ -22,6 +22,11 @@
 		FB7883432D9CCA8E00370C4D /* Muro.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB7883422D9CCA8E00370C4D /* Muro.otf */; };
 		FB7883472D9CCB4A00370C4D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7883462D9CCB4A00370C4D /* Fonts.swift */; };
 		FB7883492D9CD1E600370C4D /* SemiRoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7883482D9CD1E600370C4D /* SemiRoundedRectangle.swift */; };
+		FBBB78F42D9D7926008EEEAF /* SeasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB78F32D9D7926008EEEAF /* SeasonsView.swift */; };
+		FBBB78F62D9D7C03008EEEAF /* BigBangTheoryToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB78F52D9D7C03008EEEAF /* BigBangTheoryToolbar.swift */; };
+		FBBB78F82D9D82B6008EEEAF /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB78F72D9D82B6008EEEAF /* EpisodesView.swift */; };
+		FBBB78FA2D9D92EF008EEEAF /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB78F92D9D92EF008EEEAF /* CloseButton.swift */; };
+		FBBB78FC2D9E1595008EEEAF /* OrientationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB78FB2D9E1595008EEEAF /* OrientationVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,11 @@
 		FB7883462D9CCB4A00370C4D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		FB7883482D9CD1E600370C4D /* SemiRoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiRoundedRectangle.swift; sourceTree = "<group>"; };
 		FBBB78F22D9CDFCF008EEEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBBB78F32D9D7926008EEEAF /* SeasonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsView.swift; sourceTree = "<group>"; };
+		FBBB78F52D9D7C03008EEEAF /* BigBangTheoryToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangTheoryToolbar.swift; sourceTree = "<group>"; };
+		FBBB78F72D9D82B6008EEEAF /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
+		FBBB78F92D9D92EF008EEEAF /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		FBBB78FB2D9E1595008EEEAF /* OrientationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				FB7883242D9CC49400370C4D /* ContentView.swift */,
+				FBBB78F72D9D82B6008EEEAF /* EpisodesView.swift */,
 				FB78833F2D9CC99300370C4D /* Components */,
 				FB7883382D9CC5E400370C4D /* Repository */,
 				FB78833A2D9CC61300370C4D /* ViewModel */,
@@ -128,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				FB78833D2D9CC63600370C4D /* BigBangTheoryVM.swift */,
+				FBBB78FB2D9E1595008EEEAF /* OrientationVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -135,7 +147,10 @@
 		FB78833F2D9CC99300370C4D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FBBB78F32D9D7926008EEEAF /* SeasonsView.swift */,
 				FB7883402D9CC9A000370C4D /* EpisodeCard.swift */,
+				FBBB78F52D9D7C03008EEEAF /* BigBangTheoryToolbar.swift */,
+				FBBB78F92D9D92EF008EEEAF /* CloseButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -229,15 +244,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBBB78F82D9D82B6008EEEAF /* EpisodesView.swift in Sources */,
 				FB7883472D9CCB4A00370C4D /* Fonts.swift in Sources */,
 				FB7883282D9CC49400370C4D /* BigBangTheoryApp.swift in Sources */,
 				FB7883492D9CD1E600370C4D /* SemiRoundedRectangle.swift in Sources */,
 				FB7883362D9CC5DA00370C4D /* BigBangTheoryModel.swift in Sources */,
 				FB78833E2D9CC63600370C4D /* BigBangTheoryVM.swift in Sources */,
+				FBBB78FA2D9D92EF008EEEAF /* CloseButton.swift in Sources */,
+				FBBB78FC2D9E1595008EEEAF /* OrientationVM.swift in Sources */,
 				FB7883392D9CC5E400370C4D /* Repository.swift in Sources */,
 				FB7883292D9CC49400370C4D /* ContentView.swift in Sources */,
 				FB7883412D9CC9A000370C4D /* EpisodeCard.swift in Sources */,
 				FB7883342D9CC5D100370C4D /* RepositoryTest.swift in Sources */,
+				FBBB78F62D9D7C03008EEEAF /* BigBangTheoryToolbar.swift in Sources */,
+				FBBB78F42D9D7926008EEEAF /* SeasonsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cxcarvaj.BigBangTheory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -418,7 +438,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cxcarvaj.BigBangTheory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

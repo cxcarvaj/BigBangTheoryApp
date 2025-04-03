@@ -8,38 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var vm = BigBangTheoryVM()
+    @Environment(BigBangTheoryVM.self) private var vm
+    @Namespace private var namespace
     
     var body: some View {
+        @Bindable var vm = vm
         NavigationStack {
             ScrollView {
-                ForEach(1..<13) { season in
-                    Section {
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            LazyHStack(spacing: 20) {
-                                ForEach(vm.getEpisodesBySeason(season)) { episode in
-                                    EpisodeCard(episode: episode)
-                                }
-                            }
-                        }
-                    } header: {
-                        HStack {
-                            Text("Season \(season)")
-                                .font(.bbtTitle)
-                            Spacer()
-                            Image("season\(season)")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 50)
-                        }
+                LazyVStack {
+                    ForEach(1..<13) { season in
+                        SeasonsView(season: season, namespace: namespace)
                     }
                 }
             }
             .safeAreaPadding()
+//            .navigationDestination(for: BigBangTheoryModel.self) { episode in
+//                EpisodesView(episode: episode, namespace: namespace)
+//                    .closeButton {
+//                        vm.selectedEpisode = nil
+//                    }
+//            }
+//            .navigationTitle("The Big Bang Theory") //Con navigationTitle no podemos usar custom fonts
+            .bigBangTheoryToolbar
+        }
+        .sheet(item: $vm.selectedEpisode) { episode in
+            EpisodesView(episode: episode, namespace: namespace)
+                .closeButton {
+                    vm.selectedEpisode = nil
+                }
         }
     }
 }
 
 #Preview {
-    ContentView.preview()
+    ContentView.preview
 }
