@@ -21,14 +21,31 @@ struct SeasonsView: View {
 //                        NavigationLink(value: episode) {
 //                            EpisodeCard(episode: episode, namespace: namespace)
 //                        }
+                        #if os(iOS) || os(visionOS)
                         Button {
                             vm.selectedEpisode = episode
                         } label: {
                             EpisodeCard(episode: episode, namespace: namespace)
                                 .hoverEffect(.lift)
                         }
+                        .buttonBorderShape(.roundedRectangle(radius: 10))
+                        .buttonStyle(.plain)
+                        #elseif os(macOS)
+                        NavigationLink(value: episode) {
+                            EpisodeCard(episode: episode, namespace: namespace)
+                        }
+                        .buttonStyle(.plain)
+                        #elseif os(tvOS)
+                        NavigationLink(value: episode) {
+                            EpisodeCard(episode: episode, namespace: namespace)
+                        }
+                        .buttonStyle(.card) //Este estilo solamente existe en AppleTV
+                        #endif
                     }
                 }
+                #if os(tvOS)
+                .frame(height: 250)
+                #endif
             }
         } header: {
             HStack {

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#if os(iOS)
 @Observable @MainActor
 final class OrientationVM {
     private(set) var isLandscape: Bool
@@ -36,3 +37,9 @@ final class OrientationVM {
         NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
     }
 }
+#elseif os(macOS) || os(tvOS) || os(visionOS)
+@Observable @MainActor
+final class OrientationVM {
+    private(set) var isLandscape = true
+}
+#endif

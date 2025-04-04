@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
+#if os(iOS)
 @MainActor let isiPad = UIDevice.current.userInterfaceIdiom == .pad
+#elseif os(macOS) || os(tvOS) || os(visionOS)
+@MainActor let isiPad = true
+#endif
 
 @main
 struct BigBangTheoryApp: App {
@@ -20,5 +25,7 @@ struct BigBangTheoryApp: App {
                 .environment(vm)
                 .environment(orientation)
         }
+        // Las unicas tablas que debo poner aquí, son las tablas padres, es decir que no dependan de otras.
+        .modelContainer(for: BBTModel.self)
     }
 }

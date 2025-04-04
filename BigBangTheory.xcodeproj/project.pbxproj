@@ -22,6 +22,8 @@
 		FB7883432D9CCA8E00370C4D /* Muro.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB7883422D9CCA8E00370C4D /* Muro.otf */; };
 		FB7883472D9CCB4A00370C4D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7883462D9CCB4A00370C4D /* Fonts.swift */; };
 		FB7883492D9CD1E600370C4D /* SemiRoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7883482D9CD1E600370C4D /* SemiRoundedRectangle.swift */; };
+		FB7A28FF2D9F1FCA00515CE3 /* BBTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A28FE2D9F1FCA00515CE3 /* BBTModel.swift */; };
+		FB7A29012D9F265E00515CE3 /* BBTModelPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A29002D9F265E00515CE3 /* BBTModelPreview.swift */; };
 		FBBB78F42D9D7926008EEEAF /* SeasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB78F32D9D7926008EEEAF /* SeasonsView.swift */; };
 		FBBB78F62D9D7C03008EEEAF /* BigBangTheoryToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB78F52D9D7C03008EEEAF /* BigBangTheoryToolbar.swift */; };
 		FBBB78F82D9D82B6008EEEAF /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB78F72D9D82B6008EEEAF /* EpisodesView.swift */; };
@@ -45,6 +47,8 @@
 		FB7883422D9CCA8E00370C4D /* Muro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Muro.otf; sourceTree = "<group>"; };
 		FB7883462D9CCB4A00370C4D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		FB7883482D9CD1E600370C4D /* SemiRoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiRoundedRectangle.swift; sourceTree = "<group>"; };
+		FB7A28FE2D9F1FCA00515CE3 /* BBTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBTModel.swift; sourceTree = "<group>"; };
+		FB7A29002D9F265E00515CE3 /* BBTModelPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBTModelPreview.swift; sourceTree = "<group>"; };
 		FBBB78F22D9CDFCF008EEEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBBB78F32D9D7926008EEEAF /* SeasonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsView.swift; sourceTree = "<group>"; };
 		FBBB78F52D9D7C03008EEEAF /* BigBangTheoryToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangTheoryToolbar.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				FB7883352D9CC5DA00370C4D /* BigBangTheoryModel.swift */,
+				FB7A28FE2D9F1FCA00515CE3 /* BBTModel.swift */,
+				FB7A29002D9F265E00515CE3 /* BBTModelPreview.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,8 +261,10 @@
 				FB7883392D9CC5E400370C4D /* Repository.swift in Sources */,
 				FB7883292D9CC49400370C4D /* ContentView.swift in Sources */,
 				FB7883412D9CC9A000370C4D /* EpisodeCard.swift in Sources */,
+				FB7A29012D9F265E00515CE3 /* BBTModelPreview.swift in Sources */,
 				FB7883342D9CC5D100370C4D /* RepositoryTest.swift in Sources */,
 				FBBB78F62D9D7C03008EEEAF /* BigBangTheoryToolbar.swift in Sources */,
+				FB7A28FF2D9F1FCA00515CE3 /* BBTModel.swift in Sources */,
 				FBBB78F42D9D7926008EEEAF /* SeasonsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,9 +415,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cxcarvaj.BigBangTheory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,7";
 			};
 			name = Debug;
 		};
@@ -437,9 +450,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cxcarvaj.BigBangTheory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,7";
 			};
 			name = Release;
 		};

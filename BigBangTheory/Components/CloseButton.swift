@@ -20,7 +20,9 @@ fileprivate struct CloseButton: ViewModifier {
                         .symbolVariant(.circle.fill)
                 }
                 .buttonBorderShape(.circle)
+                #if os(iOS) || os(visionOS)
                 .hoverEffect(.highlight)
+                #endif
                 .font(.title)
                 .foregroundStyle(.white.opacity(0.8))
                 .padding(.trailing)

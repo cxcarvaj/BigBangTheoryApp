@@ -29,17 +29,22 @@ struct ContentView: View {
 //                    }
 //            }
 //            .navigationTitle("The Big Bang Theory") //Con navigationTitle no podemos usar custom fonts
+            #if os(iOS)
             .bigBangTheoryToolbar
+            #endif
         }
         .sheet(item: $vm.selectedEpisode) { episode in
             EpisodesView(episode: episode, namespace: namespace)
+            #if os(iOS)
                 .closeButton {
                     vm.selectedEpisode = nil
                 }
+            #endif
         }
     }
 }
 
 #Preview {
     ContentView.preview
+        .environment(OrientationVM())
 }

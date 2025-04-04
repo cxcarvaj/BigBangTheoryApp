@@ -39,9 +39,12 @@ struct EpisodeCard: View {
                 .foregroundStyle(.background)
             }
             .clipShape(RoundedRectangle(cornerRadius: 10))
+        #if os(iOS) || os(visionOS)
             .shadow(color: .primary.opacity(0.4), radius: 10, x: 0, y: 5)
-//            .padding([.vertical, .horizontal], 10)
             .padding(.bottom)
+        //            .padding([.vertical, .horizontal], 10)
+        #endif
+            
     }
 }
 
